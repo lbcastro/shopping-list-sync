@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shopping-list-sync"
+version = "1.0.0"
+description = "Automatically organize your Todoist shopping list using AI-powered categorization"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Lourenço Castro", email = "lca@mir-robots.com"}
+]
+keywords = ["todoist", "shopping-list", "openai", "automation", "organization", "productivity"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business",
+    "Topic :: Utilities",
+]
+
+dependencies = [
+    "todoist-api-python>=2.1.0",
+    "openai>=1.0.0",
+    "loguru>=0.7.0",
+    "python-dotenv>=1.0.0",
+    "tenacity>=8.2.0",
+    "requests>=2.31.0",
+    "apscheduler>=3.10.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/lbcastro/shopping-list-sync"
+Repository = "https://github.com/lbcastro/shopping-list-sync"
+Issues = "https://github.com/lbcastro/shopping-list-sync/issues"
+
+[project.scripts]
+shopping-sync = "shopping_list_sync.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+shopping_list_sync = ["py.typed"]
+
+[tool.black]
+line-length = 100
+target-version = ["py39"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false

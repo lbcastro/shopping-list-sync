@@ -1,0 +1,18 @@
+[Unit]
+Description=Shopping List Sync - Todoist Shopping List Organizer
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=%USER%
+WorkingDirectory=%INSTALL_DIR%
+EnvironmentFile=%INSTALL_DIR%/.env
+ExecStart=%PYTHON_PATH% -m shopping_list_sync
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

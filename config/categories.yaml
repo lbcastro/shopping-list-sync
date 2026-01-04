@@ -1,0 +1,162 @@
+# Default supermarket aisle categories for Shopping List Sync
+# Users can customize this file to match their local supermarket layout
+
+categories:
+  produce:
+    emoji: "🥬"
+    keywords:
+      - vegetables
+      - fruits
+      - lettuce
+      - tomatoes
+      - carrots
+      - apples
+      - bananas
+      - berries
+      - herbs
+      - greens
+      - onions
+      - garlic
+    priority: 1
+
+  meat_seafood:
+    emoji: "🥩"
+    keywords:
+      - chicken
+      - beef
+      - pork
+      - turkey
+      - fish
+      - salmon
+      - shrimp
+      - seafood
+      - meat
+      - steak
+      - ground beef
+    priority: 2
+
+  dairy:
+    emoji: "🥛"
+    keywords:
+      - milk
+      - cheese
+      - yogurt
+      - butter
+      - cream
+      - eggs
+      - sour cream
+      - cottage cheese
+    priority: 3
+
+  bakery:
+    emoji: "🍞"
+    keywords:
+      - bread
+      - bagels
+      - muffins
+      - croissants
+      - rolls
+      - baguette
+      - tortillas
+    priority: 4
+
+  pantry:
+    emoji: "🥫"
+    keywords:
+      - canned
+      - sauce
+      - oil
+      - vinegar
+      - flour
+      - sugar
+      - baking
+      - soup
+    priority: 5
+
+  grains_pasta:
+    emoji: "🌾"
+    keywords:
+      - pasta
+      - rice
+      - noodles
+      - quinoa
+      - couscous
+      - grains
+      - cereal
+      - oats
+    priority: 6
+
+  spices_seasonings:
+    emoji: "🧂"
+    keywords:
+      - spices
+      - salt
+      - pepper
+      - seasoning
+      - herbs dried
+      - cumin
+      - paprika
+      - oregano
+    priority: 7
+
+  frozen:
+    emoji: "❄️"
+    keywords:
+      - frozen
+      - ice cream
+      - frozen vegetables
+      - frozen fruit
+      - pizza
+      - frozen meals
+    priority: 8
+
+  international:
+    emoji: "🌏"
+    keywords:
+      - asian
+      - mexican
+      - italian
+      - thai
+      - indian
+      - soy sauce
+      - curry
+      - salsa
+    priority: 9
+
+  canned_goods:
+    emoji: "🥫"
+    keywords:
+      - canned beans
+      - canned tomatoes
+      - canned vegetables
+      - canned fruit
+      - chickpeas
+    priority: 10
+
+  condiments:
+    emoji: "🫙"
+    keywords:
+      - ketchup
+      - mustard
+      - mayonnaise
+      - dressing
+      - hot sauce
+      - relish
+      - pickles
+    priority: 11
+
+  baby:
+    emoji: "👶"
+    keywords:
+      - diapers
+      - baby wipes
+      - formula
+      - baby food
+      - baby care
+      - baby products
+    priority: 12
+
+  other:
+    emoji: "📦"
+    keywords: []
+    priority: 99
